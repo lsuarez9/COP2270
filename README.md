@@ -32,11 +32,11 @@ By the end of this course, students will be able to:
 - **IDE**: [Code::Blocks](http://www.codeblocks.org/) or [OnlineGDB](https://www.onlinegdb.com/)
 - **Operating System**: Windows/macOS/Linux
 
-## 📂 Repository Structure
+## Repository Structure
  To Be Define...
 
  
-## 📅 Weekly Topics Overview
+## Weekly Topics Overview
 
 | Week | Topics Covered                             |
 |------|---------------------------------------------|
@@ -49,13 +49,13 @@ By the end of this course, students will be able to:
 | 7    | File I/O and Error Handling                 |
 | 8+   | Final Projects and Exam Preparation         |
 
-## 📚 Resources
+## Resources
 
 - [The C Programming Language by Kernighan & Ritchie](https://en.wikipedia.org/wiki/The_C_Programming_Language)
 - [C Programming Tutorial – GeeksforGeeks](https://www.geeksforgeeks.org/c-programming-language/)
 - [OnlineGDB – C Compiler](https://www.onlinegdb.com/online_c_compiler)
 
-## 👨‍🏫 Instructor
+## Instructor
 
 **Professor Lester Suarez**  
 Miami Dade College – North Campus  
