@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
+//This is my first program
 int main()
 {
     printf("Lab1 welcome!\n");
