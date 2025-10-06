@@ -1,0 +1,138 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    printf("Lab 2 \n");
+//----------------------Exercise 1: Arithmetic Operations Practice
+
+    int c = 10,d = 10, e;
+
+    e = c+d;
+    printf("c+d = %d \n",e);
+
+    e = c-d;
+    printf("c-d = %d \n",e);
+
+    e = c*d;
+    printf("c*d = %d \n",e);
+
+    e = c/d;
+    printf("c/d = %d \n",e);
+
+    e = c%d;
+    printf("c%d = %d \n",e);
+
+
+
+//-------- comments
+//(+)-(Addition Operator): Performs addition between two operands.
+//(-)-(Subtraction Operator): Performs subtraction between two operands.
+//(*)-(Multiplication Operator): Performs multiplication between two operands.
+//(/)-(Division Operator): Performs division between two operands. If both operands are integers, it performs integer division (truncating the decimal part).
+//(%)-(Modulo Operator): Returns the remainder of an integer division.
+
+
+//---------------------------------------------------------------------------------------
+
+//-------------Exercise 2: Age Classification Using Relational Operators
+
+
+printf("enter your age:  ");
+
+int age;
+
+scanf("%d", &age);
+
+
+if (age < 18) {
+        printf("You are classified as a Minor.\n");
+    } else if (age >= 18 && age <= 64) {
+        printf("You are classified as an Adult.\n");
+    } else { // Covers all ages 65 and over
+        printf("You are classified as a Senior.\n");
+    }
+
+// in the first if is telling that if the age is less then 18 then your are a minor
+
+// in else if is telling that if your age is between 18 and 64 inclusive
+
+//else if neither of the above condition are met, this block executes for all other cases age 65 or greater
+
+ //--------------------Exercise 3: Entry Logic with Boolean Conditions
+
+     int hasTicket;
+     int over18;
+
+     printf("Anwers the fallowing question with 1 for 'yes' or 0 for 'no'. \n\n");
+     printf("do you have tickets?");
+     scanf("%d", &hasTicket);
+
+     printf("are you over 18? ");
+     scanf("%d", &over18);
+
+    if (hasTicket && over18) {
+        printf("\nAccess granted. Welcome to the concert\n");
+    } else {
+        printf("\nAccess denied. You cannot enter.\n");
+
+    }
+
+    //The result is "Access granted" because both conditions were true.
+    //The user answered 'yes' (1) to having a ticket, AND they answered 'yes' (1)
+    //to being over 18. Since (1 && 1) is true, the if-block is executed
+
+
+ //--------------------Exercise 4: Understanding Operator Precedence
+
+
+
+   int x = 5;
+   int y = 10;
+   int z;
+
+
+   z = x + y * 2;
+   printf("Result of x + y * 2 = %d\n", z);
+   // According to operator precedence, multiplication is performed before addition.
+   // y * 2 is calculated first (10 * 2 = 20), then added to x (5 + 20 = 25).
+
+   z = (x + y) * 2;
+   printf("Result of (x + y) * 2 = %d\n", z);
+   // The parentheses force the addition to be performed first.
+   // x + y is calculated first (5 + 10 = 15), then multiplied by 2 (15 * 2 = 30).
+
+   z = x > 3 && y < 15;
+   printf("Result of x > 3 && y < 15 = %d\n", z);
+   // This is a logical AND operation. Both conditions must be true for the result to be true (1).
+  // x > 3 is true (5 > 3).  y < 15 is true (10 < 15). both are true
+
+   z = !(x == 5);
+   printf("Result of !(x == 5) = %d\n", z);
+   // The equality operator (==) is evaluated first.
+   // x == 5 is true (5 is equal to 5).
+
+//---------------------Exercise 5: Assignment Operators in Action
+
+   int score = 50;
+
+   score += 20;
+   // The current value of score (50) is added to 20.
+    // score becomes 50 + 20, which is 70.
+   score -= 10;
+    //The current value of score (70) is subtracted by 10.
+    // score becomes 70 - 10, which is 60.
+   score *= 3;
+   // The current value of score (60) is multiplied by 3.
+    // score becomes 60 * 3, which is 180.
+   score /= 5;
+   // The current value of score (180) is divided by 5.
+   // score becomes 180 / 5, which is 36.
+
+   printf("The final value of score is: %d\n", score);
+
+
+
+    return 0;
+}
