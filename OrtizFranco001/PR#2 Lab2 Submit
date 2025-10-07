@@ -1,0 +1,153 @@
+#include <stdio.h>
+
+int main() {
+
+    // EXERCISE 1: Arithmetic Operations Practice
+
+    int num1, num2;
+
+    // Prompt user for two integer values
+    printf("EXERCISE 1: Arithmetic Operations\n");
+    printf("Enter the first integer: ");
+    scanf("%d", &num1);
+    printf("Enter the second integer: ");
+    scanf("%d", &num2);
+
+    // Perform arithmetic operations and display results
+    printf("\nResults:\n");
+
+    // Addition: adds the two numbers together
+    printf("Addition: %d + %d = %d\n", num1, num2, num1 + num2);
+
+    // Subtraction: subtracts the second number from the first
+    printf("Subtraction: %d - %d = %d\n", num1, num2, num1 - num2);
+
+    // Multiplication: multiplies the two numbers
+    printf("Multiplication: %d * %d = %d\n", num1, num2, num1 * num2);
+
+    // Integer division: divides and returns only the whole number (truncates decimal)
+    printf("Integer Division: %d / %d = %d\n", num1, num2, num1 / num2);
+
+    // Modulo: returns the remainder after division
+    printf("Modulo: %d %% %d = %d\n\n", num1, num2, num1 % num2);
+
+    return 0;
+}
+
+
+      // EXERCISE 2: Age Classification Using Relational Operators
+
+#include <stdio.h>
+
+  int main(void) {
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    // Basic check
+    if (age < 0) {
+        printf("Age cannot be negative.\n");
+        return 0;
+    }
+
+    // Minor if age < 18
+    // Adult if 18 <= age <= 64
+    // Senior if age >= 65
+    if (age < 18) {                           
+        printf("Classification: Minor\n");
+    } else if (age <= 64) {                   
+        printf("Classification: Adult\n");
+    } else {                                  
+        printf("Classification: Senior\n");
+    }
+
+    
+    return 0;
+  }
+
+      // EXERCISE 3: Entry Logic with Boolean Conditions 
+
+#include <stdio.h>
+
+int main(void) {
+    int has_ticket; 
+    int is_over18;   
+
+    printf("Do you have a ticket? (1 = yes, 0 = no): ");
+    scanf("%d", &has_ticket);
+    printf("Are you over 18? (1 = yes, 0 = no): ");
+    scanf("%d", &is_over18);
+
+    // Access is granted if (has_ticket and is_over18)
+    // Deny if (not has_ticket or not is_over18)
+    if (has_ticket && is_over18) {            
+        printf("Access granted.\n");
+    } else if (!has_ticket || !is_over18) {   
+        printf("Access denied.\n");
+        // Optional explanation:
+        if (!has_ticket)  printf("- Reason: No ticket.\n");
+        if (!is_over18)   printf("- Reason: Not over 18.\n");
+    }
+    return 0;
+}
+
+      // EXERCISE  4: Understanding Operator Precedence
+
+
+#include <stdio.h>
+
+int main(void) {
+    int x = 5, y = 10, z;
+
+    // So y * 2 happens first, then x + result.
+    z = x + y * 2;   
+    printf("Result of x + y * 2 = %d\n", z);  
+
+    //  Parentheses override precedence, so (x + y) is done first.
+    z = (x + y) * 2; 
+    printf("Result of (x + y) * 2 = %d\n", z); 
+
+
+    // x > 3 is true and y < 15 is true ; then 1 && 1 yields 1.
+    z = x > 3 && y < 15; 
+    printf("Result of x > 3 && y < 15 = %d\n", z); 
+
+    // x == 5 is true, !1 becomes 0 (false).
+    z = !(x == 5); 
+    printf("Result of !(x == 5) = %d\n", z); 
+
+
+    return 0;
+}
+
+      // EXERCISE  5: Assignment Operators in Action
+
+#include <stdio.h>
+
+int main(void) {
+    int score = 50;         
+    printf("Start score = %d\n", score);
+
+    // += adds to the current value
+    score += 20;                 
+    printf("After += 20 -> %d\n", score);
+
+    // -= subtracts from the current value
+    score -= 10;                 
+    printf("After -= 10 -> %d\n", score);
+
+    // *= multiplies the current value
+    score *= 3;                  
+    printf("After *= 3  -> %d\n", score);
+
+    // /= divides the current value 
+    score /= 5;                  
+    printf("After /= 5  -> %d\n", score);
+
+    // Final value
+    printf("Final score = %d\n", score); 
+
+    return 0;
+}
+
+      
