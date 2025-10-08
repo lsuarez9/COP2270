@@ -7,7 +7,7 @@ int main() {
     int num1, num2;
     
     // Prompt user for two integer values
-    printf("EXERCISE 1: Arithmetic Operations\n");
+    
     printf("Enter the first integer: ");
     scanf("%d", &num1);
     printf("Enter the second integer: ");
@@ -24,10 +24,10 @@ int main() {
     
     // Multiplication: multiplies the two numbers
     printf("Multiplication: %d * %d = %d\n", num1, num2, num1 * num2);
-    
+
     // Integer division: divides and returns only the whole number (truncates decimal)
     printf("Integer Division: %d / %d = %d\n", num1, num2, num1 / num2);
-    
+
     // Modulo: returns the remainder after division
     printf("Modulo: %d %% %d = %d\n\n", num1, num2, num1 % num2);
     
@@ -38,7 +38,7 @@ int main() {
   
     int age;
     
-    printf("EXERCISE 2: Age Classification\n");
+   
     printf("Enter your age: ");
     scanf("%d", &age);
     
@@ -62,7 +62,7 @@ int main() {
     
     int hasTicket, isOver18;
     
-    printf("EXERCISE 3: Concert Entry Logic\n");
+
     printf("Do you have a ticket? (1 = yes, 0 = no): ");
     scanf("%d", &hasTicket);
     printf("Are you over 18? (1 = yes, 0 = no): ");
@@ -87,7 +87,7 @@ int main() {
     
     int x = 5, y = 10, z;
     
-    printf("EXERCISE 4: Operator Precedence\n");
+   
     printf("Starting values: x = %d, y = %d\n\n", x, y);
     
     // Expression 1: Multiplication has higher precedence than addition
@@ -130,7 +130,7 @@ int main() {
     
     int score = 50;
     
-    printf("EXERCISE 5: Assignment Operators\n");
+
     printf("Starting score: %d\n", score);
     
     // Add 20 to score using += operator
